@@ -1,2 +1,2 @@
-var App = require("fancy-biojs-app");
+var App = require("slush-project");
 var instance = new App({el: rootDiv});
