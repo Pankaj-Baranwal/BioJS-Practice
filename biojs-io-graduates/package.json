@@ -1,0 +1,33 @@
+{
+  "name": "biojs-io-graduates",
+  "description": "A parser for the BioJS tutorial list",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Pankaj-Baranwal/biojs-io-graduates",
+  "author": {
+    "name": "pankaj",
+    "email": "pankajbaranwal.1996@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Pankaj-Baranwal/biojs-io-graduates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pankaj-Baranwal/biojs-io-graduates/issues"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+		"test": "mocha",
+		"build": "mkdirp build && browserify -r ./:biojs-io-graduates -o build/graduates.js",
+		"build-browser": "npm run build",
+		"prepublish": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+		"mkdirp": "^0.5.0",
+		"browserify": "6.x",
+		"chai": "1.x",
+		"mocha": "1.x"
+  }, 
+  "keywords": ["graduate","parser","biojs"]
+}
